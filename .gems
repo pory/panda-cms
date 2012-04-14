@@ -1,0 +1,7 @@
+sinatra
+haml
+pony
+rest-client
+json
+rdiscount
+fakefs

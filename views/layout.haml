@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html;charset=utf-8' }
+    %title= "title"
+    
+    %meta{ 'name' => 'keywords', :content => 'keywords' }
+    %meta{ 'name' => 'description', :content => 'description' }
+    %meta{ 'name' => 'DC.creator', :content => 'Tomáš Porazil - http://www.porazil.net' }
+    %meta{ 'name' => 'DC.subject', :content => 'Programování a UX design' }
+    %meta{ 'name' => 'author', :content => 'Tomáš Porazil' }
+    %meta{ 'name' => 'title', :content => 'title' }
+
+    %meta{ 'name' => 'robots', :content => 'all,follow' }
+    %meta{ 'name' => 'language', :content => 'Czech' }
+    %meta{ 'name' => 'distribution', :content => 'global' }
+    
+    / %link{ :href => '/favicon.png', :type => "image/png", :rel => "icon" }    
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery-ui.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/cms.js" }
+    %link{ :href => '/stylesheets/cms.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
+  %body
+    = yield
+    -if authorized?
+      #fader{:style => "display: none" }
+      #modal-window{:style => "display: none" }
+        %form{ :action => "texts", :method => "post", :id => "texts-form", :class => "form" }
+          %label{:for => "text[value]", :id => "text_label"} Hodnota:
+          %textarea{:name => "text[value]", :id => "text_value"}
+          %input{:type => "submit", :value => "Uložit", :class => "button"}
+          %a{:href => "#", :class => "button", :id => "close-texts-form"} Zavřít

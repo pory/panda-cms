@@ -1,0 +1,5 @@
+development: &development
+  document_db: "localhost:5984/cms"
+
+production:
+  <<: *development

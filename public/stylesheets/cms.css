@@ -1,0 +1,62 @@
+.form ol li { list-style: none; margin-bottom: 15px; margin-left: 0;}
+.form input, .form textarea {
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #dddddd;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  font-family: inherit;
+  padding: 12px;
+  width: 90%;
+  font-size: 14px;
+}
+
+.button {
+  width: 120px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  background-color: #454545;
+  color: white;
+  padding: 6px 12px 6px 12px;
+  border: none;
+  font-family: sans-serif;
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.button:hover, .button:focus { background-color: #5C5C5C; }
+.button.cancel-try-code, .button.try-code { margin-bottom: 10px; }
+
+.form input:hover, .form textarea:hover { background-color: #cccccc; }
+.form input:focus, .form textarea:focus { background-color: #B5D5E6;}
+.form textarea { height: 150px; }
+.form .button {
+  width: 120px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  background-color: #454545;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: sans-serif;
+}
+.form .button:hover, .form .button:focus { background-color: #5C5C5C; }
+
+#fader { background-color: black; bottom: 0; left: 0; opacity: 0.75; position: fixed; right: 0; top: 0; z-index: 99;}
+#modal-window {
+  -moz-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
+  background-color: white;
+  height: 40%;
+  margin-top: 80px;
+  opacity: 1;
+  padding: 20px;
+  position: fixed;  
+  z-index: 100;
+  width: 40%;
+  top: 0;
+  margin-left: 30%;
+}
