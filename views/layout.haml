@@ -18,15 +18,19 @@
     / %link{ :href => '/favicon.png', :type => "image/png", :rel => "icon" }    
     %script{ :type => "text/javascript", :src => "/javascripts/jquery.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/jquery-ui.js" }
+    %script{ :type => "text/javascript", :src => "/cleditor/jquery.cleditor.min.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/cms.js" }
+    
     %link{ :href => '/stylesheets/cms.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
+    %link{ :href => '/cleditor/jquery.cleditor.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
+    
   %body
     = yield
     -if authorized?
       #fader{:style => "display: none" }
       #modal-window{:style => "display: none" }
         %form{ :action => "texts", :method => "post", :id => "texts-form", :class => "form" }
-          %label{:for => "text[value]", :id => "text_label"} Hodnota:
           %textarea{:name => "text[value]", :id => "text_value"}
-          %input{:type => "submit", :value => "Uložit", :class => "button"}
-          %a{:href => "#", :class => "button", :id => "close-texts-form"} Zavřít
+          %div.controls
+            %input{:type => "submit", :value => "Uložit", :class => "button"}
+            %a{:href => "#", :class => "button", :id => "close-texts-form"} Zavřít

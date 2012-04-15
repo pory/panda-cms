@@ -30,7 +30,7 @@ module CmsHelper
     document_id = options[:object]['_id']
     method = options[:object][item].blank? ? 'post' : 'put'    
     if authorized?
-      "<img src='/images/icon_pencil.gif' class='edit-icon'><span id='text_item_#{item}' class='editable' data-key='#{item}' data-document_id='#{document_id}' data-method='#{method}'>#{value}</span>"
+      "<img src='/images/icon_pencil.gif' class='edit-icon'><div id='text_item_#{item}' class='editable' data-key='#{item}' data-document_id='#{document_id}' data-method='#{method}'>#{value}</div>"
     else
       options[:object][item] unless options[:object][item].blank?
     end

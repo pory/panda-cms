@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("a#close-texts-form").click(function(){
+	
+ 	$("a#close-texts-form").click(function(){
     closeModal();
     return false;
   });
@@ -49,4 +50,16 @@ function adjustTextsForm(source) {
   $("#text_label").attr("for", "text["+key+"]");
   $("#texts-form").attr("method", method);
   $("#texts-form").attr("action", "/texts/" + documentId + "/" + key);
+
+	buildCleditor();
+}
+
+function buildCleditor() {
+	$("#text_value").cleditor({
+		width: 550,
+		height: 270,
+		controls: "bold italic underline strikethrough subscript superscript | " +
+							"style | bullets numbering | outdent indent | alignleft center alignright justify | " +
+							"undo redo | image link unlink | source",
+	})[0].updateFrame();
 }
