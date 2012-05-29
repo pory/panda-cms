@@ -1,0 +1,20 @@
+body { background-color: #fcfcfc; font-family: 'Helvetica Neue', 'Helvetica','Verdana', 'Arial';}
+
+p { font-family: 'Minion Pro', 'Times new roman', 'Georgia', 'serif'; }
+a { color: #2b96f1; }
+
+#page { width: 960px; margin: 0 auto;}
+
+#header { }
+
+#top-menu { margin-top: 10px; }
+#top-menu a { color: #000; text-decoration: none; font-size: 14px; float: left; padding: 10px 20px 0 0; }
+#top-menu a:hover { color: #2b96f1; }
+
+#social { float: right; margin-bottom: 5px;}
+#social a { color: #fcfcfc; padding-left: 10px;}
+
+.separator { height: 2px; background: url(/images/separator.png) repeat-x; clear: both; }
+
+#homepage .logo, #homepage #claim { margin: 0 auto; width: 400px; text-align: center;}
+

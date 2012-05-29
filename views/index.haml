@@ -1,5 +1,11 @@
-%h1
-  =list :object => @index, :item => 'headline'
-  
-%p
-  =list :object => @index, :item => 'content'
+#homepage
+  %h1.logo
+    %a{ :href => "/" }
+      %span linguasia
+  #claim
+    .main
+      =list :object => @index, :item => 'main-claim'
+    .subclaim
+      =list :object => @index, :item => 'sub-claim'
+  %p
+    =list :object => @index, :item => 'content'

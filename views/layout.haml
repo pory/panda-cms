@@ -21,11 +21,27 @@
     %script{ :type => "text/javascript", :src => "/cleditor/jquery.cleditor.min.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/cms.js" }
     
+    %link{ :href => '/stylesheets/reset.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
     %link{ :href => '/stylesheets/cms.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
+    %link{ :href => '/stylesheets/linguasia.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
     %link{ :href => '/cleditor/jquery.cleditor.css', :type => "text/css", :media => "screen", :rel => "stylesheet" }
     
   %body
-    = yield
+    #page
+      #header
+        #top-menu
+          %a{ :href => "#" } O nás
+          %a{ :href => "#" } Kontakt
+          %a{ :href => "#" } Kariéra
+          %a{ :href => "#" } Blog
+        #social
+          %a{ :href => "#" }
+            %img{ :src => "/images/facebook.png" }
+          %a{ :href => "#" }
+            %img{ :src => "/images/twitter.png" }
+        .separator
+      #content
+        = yield
     -if authorized?
       #fader{:style => "display: none" }
       #modal-window{:style => "display: none" }
