@@ -24,6 +24,11 @@ class Cms < Sinatra::Base
     @index = Text.find_or_create('index')  
     haml :index
   end
+
+  get '/blog' do
+    @blog = Text.find_or_create('blog')  
+    haml :blog
+  end
   
   put '/texts/:document/:key' do
     save_text!(:document => params[:document], :text => params[:text], :key => params[:key])

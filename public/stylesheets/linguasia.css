@@ -1,20 +1,163 @@
-body { background-color: #fcfcfc; font-family: 'Helvetica Neue', 'Helvetica','Verdana', 'Arial';}
+body {
+  background-color: #fcfcfc;
+  font-family: 'Helvetica Neue', 'Helvetica','Verdana', 'Arial'; }
 
-p { font-family: 'Minion Pro', 'Times new roman', 'Georgia', 'serif'; }
-a { color: #2b96f1; }
+h1, h2, p {
+  font-family: 'Minion Pro', 'Times new roman', 'Georgia', 'serif'; }
 
-#page { width: 960px; margin: 0 auto;}
+h2 {
+  font-size: 36px; }
 
-#header { }
+h3 {
+  font-size: 18px;
+  font-weight: 400; }
 
-#top-menu { margin-top: 10px; }
-#top-menu a { color: #000; text-decoration: none; font-size: 14px; float: left; padding: 10px 20px 0 0; }
-#top-menu a:hover { color: #2b96f1; }
+p {
+  font-size: 16px;
+  line-height: 1.2em; }
 
-#social { float: right; margin-bottom: 5px;}
-#social a { color: #fcfcfc; padding-left: 10px;}
+a {
+  color: #2b96f1;
+  text-decoration: none; }
 
-.separator { height: 2px; background: url(/images/separator.png) repeat-x; clear: both; }
+a:hover {
+  text-decoration: underline; }
 
-#homepage .logo, #homepage #claim { margin: 0 auto; width: 400px; text-align: center;}
+.clear {
+  clear: both; }
 
+#page {
+  width: 960px;
+  margin: 0 auto; }
+
+#footer {
+  height: 200px; }
+
+#top-menu {
+  margin-top: 10px; }
+#top-menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  float: left;
+  padding: 10px 20px 0 0; }
+#top-menu a:hover {
+  color: #2b96f1; }
+
+#social {
+  float: right;
+  margin-bottom: 5px; }
+#social a {
+  color: #fcfcfc;
+  padding-left: 10px; }
+
+.separator {
+  height: 2px;
+  background: url(/images/separator.png) repeat-x;
+  clear: both; }
+
+#homepage .logo, #homepage #claim, #blog .logo, #blog #claim {
+  margin: 0 auto;
+  text-align: center; }
+#homepage .logo, #blog .logo {
+  margin-top: 40px;
+  width: 472px; }
+#homepage .logo a, #blog .logo a {
+  background: transparent url(/images/logo.png) no-repeat;
+  width: 472px;
+  height: 117px;
+  display: block; }
+#homepage .logo span, #blog .logo span {
+  display: none; }
+#homepage #claim, #blog #claim {
+  margin-top: 30px;
+  font-weight: 300; }
+  #homepage #claim .main, #blog #claim .main {
+    font-size: 40px; }
+  #homepage #claim .subclaim, #blog #claim .subclaim {
+    font-size: 24px;
+    color: #707070;
+    margin-top: 5px; }
+
+#main-menu {
+  margin-top: 40px; }
+  #main-menu .item {
+    width: 285px;
+    height: 285px;
+    background-color: #EEE;
+    border: 1px solid #dedede;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+
+.time {
+  font-style: italic;
+  font-size: 14px;
+  color: #707070;
+  font-weight: 200; }
+
+.section {
+  margin-top: 50px;
+  background: transparent url(/images/section-separator.png) no-repeat center top;
+  width: 100%;
+  min-height: 137px;
+  padding-top: 50px; }
+  .section h2 {
+    text-align: center; }
+  .section .content {
+    margin-top: 10px; }
+  .section .time {
+    margin-top: 10px; }
+  .section .column {
+    width: 295px;
+    float: left;
+    margin-top: 30px; }
+    .section .column.second {
+      margin-left: 25px;
+      margin-right: 25px; }
+
+#articles {
+  margin-top: 70px;
+  float: left;
+  width: 715px; }
+  #articles .article {
+    margin-bottom: 50px; }
+  #articles .article .content {
+    float: right;
+    width: 540px; }
+    #articles .article .content h3 {
+      margin-bottom: 20px; }
+    #articles .article .content img {
+      margin: 10px 0; }
+  #articles .article .time {
+    float: left;
+    margin-top: 3px; }
+
+#menu {
+  margin-top: 70px;
+  float: left;
+  margin-left: 80px;
+  font-size: 14px; }
+  #menu ul li {
+    margin: 4px 0; }
+  #menu #tags {
+    font-size: 13px; }
+    #menu #tags {
+      margin-bottom: 20px; }
+    #menu #tags li.tag {
+      background: url(/images/tag-arrow.png) left center no-repeat; }
+    #menu #tags a {
+      display: block;
+      padding: 2px 10px 3px 10px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 10px; }
+    #menu #tags a:hover {
+      text-decoration: none;
+      color: #2b96f1; }
+  #menu #archive li li {
+    margin-left: 10px; }
+  #menu h4 {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px; }

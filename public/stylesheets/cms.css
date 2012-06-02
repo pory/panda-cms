@@ -1,8 +1,12 @@
 /* styles for administration */
+.editable {
+  display: inline; }
 
-.editable { display: inline }
+.form ol li {
+  list-style: none;
+  margin-bottom: 15px;
+  margin-left: 0; }
 
-.form ol li { list-style: none; margin-bottom: 15px; margin-left: 0;}
 .form input, .form textarea {
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
@@ -13,18 +17,26 @@
   font-family: inherit;
   padding: 12px;
   width: 90%;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
-.button:hover, .button:focus { background-color: #5C5C5C; }
-.button.cancel-try-code, .button.try-code { margin-bottom: 10px; }
+.button:hover, .button:focus {
+  background-color: #5C5C5C; }
 
-.form input:hover, .form textarea:hover { background-color: #cccccc; }
-.form input:focus, .form textarea:focus { background-color: #B5D5E6;}
-.form textarea { height: 150px; }
+.button.cancel-try-code, .button.try-code {
+  margin-bottom: 10px; }
+
+.form input:hover, .form textarea:hover {
+  background-color: #cccccc; }
+
+.form input:focus, .form textarea:focus {
+  background-color: #B5D5E6; }
+
+.form textarea {
+  height: 150px; }
+
 .form .button, .button {
-	text-decoration: none;
-	font-size: 13px;
+  text-decoration: none;
+  font-size: 13px;
   width: 120px;
   -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
@@ -33,11 +45,21 @@
   color: white;
   padding: 10px;
   border: none;
-  font-family: sans-serif;
-}
-.form .button:hover, .form .button:focus { background-color: #5C5C5C; }
+  font-family: sans-serif; }
 
-#fader { background-color: black; bottom: 0; left: 0; opacity: 0.75; position: fixed; right: 0; top: 0; z-index: 99;}
+.form .button:hover, .form .button:focus {
+  background-color: #5C5C5C; }
+
+#fader {
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  opacity: 0.75;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99; }
+
 #modal-window {
   -moz-border-radius: 3px 3px 3px 3px;
   border-radius: 3px;
@@ -46,14 +68,14 @@
   margin-top: 80px;
   opacity: 1;
   padding: 20px;
-  position: fixed;  
+  position: fixed;
   z-index: 100;
   width: 40%;
   top: 0;
   margin-left: 25%;
-	-moz-box-shadow:    3px 3px 10px 0px #111;
+  -moz-box-shadow: 3px 3px 10px 0px #111;
   -webkit-box-shadow: 3px 3px 10px 0px #111;
-  box-shadow:         3px 3px 10px 0px #111;
-}
+  box-shadow: 3px 3px 10px 0px #111; }
 
-#modal-window .controls { margin-top: 10px }
+#modal-window .controls {
+  margin-top: 10px; }

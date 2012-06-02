@@ -3,6 +3,7 @@ source :rubygems
 gem 'sinatra'
 gem 'rake'
 gem 'haml'
+gem 'sass'
 gem 'rest-client'
 
 # faster json

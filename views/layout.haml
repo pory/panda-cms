@@ -33,7 +33,7 @@
           %a{ :href => "#" } O nás
           %a{ :href => "#" } Kontakt
           %a{ :href => "#" } Kariéra
-          %a{ :href => "#" } Blog
+          %a{ :href => "/blog" } Blog
         #social
           %a{ :href => "#" }
             %img{ :src => "/images/facebook.png" }
@@ -42,6 +42,7 @@
         .separator
       #content
         = yield
+    #footer    
     -if authorized?
       #fader{:style => "display: none" }
       #modal-window{:style => "display: none" }

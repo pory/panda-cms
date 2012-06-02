@@ -3,9 +3,65 @@
     %a{ :href => "/" }
       %span linguasia
   #claim
-    .main
+    %h2.main
       =list :object => @index, :item => 'main-claim'
-    .subclaim
+    %h2.subclaim
       =list :object => @index, :item => 'sub-claim'
-  %p
-    =list :object => @index, :item => 'content'
+  #main-menu
+    .item
+      here will be main menu
+  .section
+    %h2= list :object => @index, :item => '1-container'
+    .column.first
+      %h3= list :object => @index, :item => '1-container-1-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-1-column-content'
+    .column.second
+      %h3= list :object => @index, :item => '1-container-2-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-2-column-content'
+    .column.third
+      %h3= list :object => @index, :item => '1-container-3-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-3-column-content'
+    .clear
+
+  .section
+    %h2= list :object => @index, :item => '1-container'
+    .column.first
+      %h3= list :object => @index, :item => '1-container-1-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-1-column-content'
+    .column.second
+      %h3= list :object => @index, :item => '1-container-2-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-2-column-content'
+    .column.third
+      %h3= list :object => @index, :item => '1-container-3-column-headline'
+      .content
+        %p= list :object => @index, :item => '1-container-3-column-content'        
+    .clear
+
+  .section.blog
+    %h2= list :object => @index, :item => 'blog'
+    .column.first
+      %h3= list :object => @index, :item => '1-container-1-column-headline'
+      .time
+        před 2 týdny
+      .content
+        %p
+          =list :object => @index, :item => '1-container-1-column-content'
+          %a{ :href => "#" }="zobrazit celý článek"
+    .column.second
+      %h3= list :object => @index, :item => '1-container-2-column-headline'
+      .time
+        před měsícem      
+      .content
+        %p= list :object => @index, :item => '1-container-2-column-content'
+    .column.third
+      %h3= list :object => @index, :item => '1-container-3-column-headline'
+      .time
+        před rokem
+      .content
+        %p= list :object => @index, :item => '1-container-3-column-content'        
+    .clear

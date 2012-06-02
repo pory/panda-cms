@@ -32,7 +32,7 @@ module CmsHelper
     if authorized?
       "<img src='/images/icon_pencil.gif' class='edit-icon'><div id='text_item_#{item}' class='editable' data-key='#{item}' data-document_id='#{document_id}' data-method='#{method}'>#{value}</div>"
     else
-      options[:object][item] unless options[:object][item].blank?
+      value
     end
   end
   

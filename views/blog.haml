@@ -1,0 +1,74 @@
+#blog
+  %h1.logo
+    %a{ :href => "/" }
+      %span linguasia
+  #claim
+    %h2.main= list :object => @blog, :item => 'main-claim'
+    %h2.subclaim= list :object => @blog, :item => 'sub-claim'
+
+  #articles
+    .article
+      .content
+        %h3
+          Moje první cesta do Japonska
+        %p
+          Jedna z českých cestovních kanceláří nabízí ve svém katalogu „cestu do neznáma“ - poznávací zájezd do Severní Koreje.
+        %img{ :width => "550", :height => "300" }
+        %p
+          Jedna z českých cestovních kanceláří nabízí ve svém katalogu „cestu do neznáma“ - poznávací zájezd do Severní Koreje. V roce 2008 to bylo podruhé od roku 1989, kdy do KLDR vstoupila obyčejná česká turistická skupina. Každý z turistů musel přistoupit na fakt, že bude po dobu zájezdu omezena jeho svoboda – nikdo ze skupiny například nemůže „neorganizovaně“ opustit hotel nebo dokonce oslovit nějakého „obyčejného“ Korejce. Kdo a proč se vydá na dovolenou do země, která je hrozbou pro bezpečnost celého světa? Turisté z České republiky, kteří se rozhodli utratit cca šedesát tisíc korun za šest dní dovolené v KLDR, odevzdají už v Pekingu mobilní telefony, do země je zakázáno vozit také přístroje GPS nebo „závadné“ tiskoviny. 
+        %p
+          V průběhu cesty se turisté několikrát klání sochám Drahého vůdce, poslouchají výklady o americkém imperialistickém zlu a s notnou dávkou ironie se obdivují monumentální stalinistické architektuře. Místní vládní turistická kancelář nechá turisty nahlédnout na předem určená místa v hlavním městě Pchjongjangu, v přilehlých oblastech a doveze je dokonce na jednu z nejstřeženějších hranic světa mezi Severní a Jižní Koreou. Ačkoliv (anebo právě proto), že je o české turisty postaráno jako o vládní delegaci, někteří přijímají tyto „atrakce“ rozpačitě a s pochybnostmi o vlastní morální zodpovědnosti. 
+        %p
+          Čeští turisté a spolu s nimi filmový štáb se stávají součástí propracovaného systému, který turisty potřebuje pro svou vlastní propagaci. Severokorejská současnost navíc nápadně připomíná českou minulost. Je pro české cestovatele tento zájezd vzpomínkou na mládí prožité v komunismu, adrenalinovým zážitkem nebo jen neobvyklým způsobem utrácení peněz? Jak se člověk z demokratické země vyrovná s nařízeními a restrikcemi totalitního systému?
+      .time
+        před rokem
+      .clear
+    .article
+      .content
+        %h3
+          Moje první cesta do Japonska
+        %p
+          Jedna z českých cestovních kanceláří nabízí ve svém katalogu „cestu do neznáma“ - poznávací zájezd do Severní Koreje.
+        %img{ :width => "550", :height => "300" }
+        %p
+          Jedna z českých cestovních kanceláří nabízí ve svém katalogu „cestu do neznáma“ - poznávací zájezd do Severní Koreje. V roce 2008 to bylo podruhé od roku 1989, kdy do KLDR vstoupila obyčejná česká turistická skupina. Každý z turistů musel přistoupit na fakt, že bude po dobu zájezdu omezena jeho svoboda – nikdo ze skupiny například nemůže „neorganizovaně“ opustit hotel nebo dokonce oslovit nějakého „obyčejného“ Korejce. Kdo a proč se vydá na dovolenou do země, která je hrozbou pro bezpečnost celého světa? Turisté z České republiky, kteří se rozhodli utratit cca šedesát tisíc korun za šest dní dovolené v KLDR, odevzdají už v Pekingu mobilní telefony, do země je zakázáno vozit také přístroje GPS nebo „závadné“ tiskoviny. 
+        %p
+          V průběhu cesty se turisté několikrát klání sochám Drahého vůdce, poslouchají výklady o americkém imperialistickém zlu a s notnou dávkou ironie se obdivují monumentální stalinistické architektuře. Místní vládní turistická kancelář nechá turisty nahlédnout na předem určená místa v hlavním městě Pchjongjangu, v přilehlých oblastech a doveze je dokonce na jednu z nejstřeženějších hranic světa mezi Severní a Jižní Koreou. Ačkoliv (anebo právě proto), že je o české turisty postaráno jako o vládní delegaci, někteří přijímají tyto „atrakce“ rozpačitě a s pochybnostmi o vlastní morální zodpovědnosti. 
+        %p
+          Čeští turisté a spolu s nimi filmový štáb se stávají součástí propracovaného systému, který turisty potřebuje pro svou vlastní propagaci. Severokorejská současnost navíc nápadně připomíná českou minulost. Je pro české cestovatele tento zájezd vzpomínkou na mládí prožité v komunismu, adrenalinovým zážitkem nebo jen neobvyklým způsobem utrácení peněz? Jak se člověk z demokratické země vyrovná s nařízeními a restrikcemi totalitního systému?
+      .time
+        před rokem        
+  #menu
+    %ul#tags
+      %li
+        %h4
+          Štítky
+      %li.tag
+        %a{ :href => "#" }="cestování"
+      %li.tag
+        %a{ :href => "#" }="jídlo a pití"
+      %li.tag
+        %a{ :href => "#" }="kulturní odlišnosti"        
+    %ul#archive
+      %li
+        %h4
+          Archív
+      %li
+        %a{ :href => "#" }="2012"
+        %ul.month
+          %li
+            %a{ :href => "#" }="květen (10)"
+          %li
+            %a{ :href => "#" }="duben (10)"
+          %li
+            %a{ :href => "#" }="březen (9)"
+      %li
+        %a{ :href => "#" }="2011"
+        %ul.month
+          %li
+            %a{ :href => "#" }="květen (10)"
+          %li
+            %a{ :href => "#" }="duben (10)"
+          %li
+            %a{ :href => "#" }="březen (9)"              
+      
