@@ -8,8 +8,33 @@
     %h2.subclaim
       =list :object => @index, :item => 'sub-claim'
   #main-menu
-    .item
-      here will be main menu
+    .item.first
+      %h3= list :object => @index, :item => 'language-course'
+      .image-wrapper
+        %img{ :src => "/images/language-course.png" }
+      .submenu{ :style => "display: none" }
+        %a{ :href => "#" } skupinové 
+        %a{ :href => "#" } dětské 
+        %a{ :href => "#" } firemní 
+        %a{ :href => "#" } individuální
+    .item.second
+      %h3= list :object => @index, :item => 'language-services'
+      .image-wrapper
+        %img{ :src => "/images/language-services.png" }
+      .submenu{ :style => "display: none" }
+        %a{ :href => "#" } překlady 
+        %a{ :href => "#" } tlumočení 
+        %a{ :href => "#" } průvodcovství
+    .item.third
+      %h3= list :object => @index, :item => 'interactive-teaching'
+      .image-wrapper
+        %img{ :src => "/images/interactive-teaching.png" }
+      .submenu{ :style => "display: none" }
+        %a{ :href => "#" } skype 
+        %a{ :href => "#" } elektronické pomůcky 
+        %a{ :href => "#" } kartičky 
+  .clear
+
   .section
     %h2= list :object => @index, :item => '1-container'
     .column.first
