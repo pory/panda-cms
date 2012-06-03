@@ -1,5 +1,5 @@
 body {
-  background-color: #fcfcfc;
+  /*background-color: $body-color;*/
   font-family: 'Helvetica Neue', 'Helvetica','Verdana', 'Arial'; }
 
 h1, h2, p {
@@ -53,7 +53,7 @@ a:hover {
 
 .separator {
   height: 2px;
-  background: url(/images/separator.png) repeat-x;
+  background: url(/images/section-separator3.png) repeat-x;
   clear: both; }
 
 #homepage .logo, #homepage #claim, #blog .logo, #blog #claim {
@@ -108,7 +108,7 @@ a:hover {
       #main-menu .item.second img {
         position: relative;
         top: 10px;
-        left: 28px; }
+        left: 0px; }
     #main-menu .item:hover {
       -moz-box-shadow: 0px 0px 10px 2px #ccc;
       -webkit-box-shadow: 0px 0px 10px 2px #ccc;
@@ -135,7 +135,7 @@ a:hover {
 
 .section {
   margin-top: 50px;
-  background: transparent url(/images/section-separator.png) no-repeat center top;
+  background: transparent url(/images/section-separator2.png) no-repeat center top;
   width: 100%;
   min-height: 137px;
   padding-top: 50px; }

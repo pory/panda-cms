@@ -3,7 +3,7 @@ $grey-font: #707070;
 $link-color: #2b96f1;
 
 body {
-  background-color: $body-color;
+  /*background-color: $body-color;*/
   font-family: 'Helvetica Neue', 'Helvetica','Verdana', 'Arial'; 
 }
 
@@ -38,7 +38,7 @@ a:hover { text-decoration: underline; }
 
 .separator {
   height: 2px;
-  background: url(/images/separator.png) repeat-x;
+  background: url(/images/section-separator3.png) repeat-x;
   clear: both; 
 }
 
@@ -77,7 +77,7 @@ a:hover { text-decoration: underline; }
     &.third img { position: relative; top: 13px; left:  70px; }
     &.second {
       margin: 0 25px;
-      img { position: relative; top: 10px; left:  28px; }
+      img { position: relative; top: 10px; left:  0px; }
     }
     &:hover { 
       -moz-box-shadow:    0px 0px 10px 2px #ccc;
@@ -102,7 +102,7 @@ a:hover { text-decoration: underline; }
 
 .section {
   margin-top: 50px;
-  background: transparent url(/images/section-separator.png) no-repeat center top;
+  background: transparent url(/images/section-separator2.png) no-repeat center top;
   width: 100%;
   min-height: 137px;
   padding-top: 50px;
